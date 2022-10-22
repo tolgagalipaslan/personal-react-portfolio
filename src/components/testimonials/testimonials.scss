@@ -1,0 +1,152 @@
+@import '../../global.scss';
+.testimonials{
+    background-color: rgb(45, 1, 65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    h1{
+         font-size: 50px;
+         height: 10%;
+         @media (max-width:#{$width}) {
+            font-size: 30px;
+            } 
+    }
+    .container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width:#{$width}) {
+            flex-direction: column;
+            gap: 10px;
+            } 
+        .card  {
+            background-color: rgb(250, 202, 44);
+            width: 350px;
+            height: 60%;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            box-shadow: 0px 0px 15px -8px black;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: space-around;
+            padding: 20px;
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            @media (max-width:#{$width}) {
+                height: 180px;
+                width: 350px;
+                } 
+            &.featured{
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                margin: 0 10px;
+                @media (max-width:#{$width}) {
+                    height: 200px;
+                    width: 350px;
+                    transform: scale(1);
+                    -webkit-transform: scale(1);
+                    -moz-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -o-transform: scale(1);
+     } 
+    }
+    &:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    }
+            .top{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a{
+                    height: 40px;
+                    width: 40px;
+                    background-color: white;
+                    padding: 5px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    color: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+                    ;
+                }
+                .imgBox{
+                   
+                    
+                    img{
+                   
+                        &.user{
+                            height: 80px;
+                            width: 80px;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            margin: 0 30px;
+                            @media (max-width:#{$width}) {
+        
+                                height: 40px;
+                                width: 40px;
+                               } 
+                    }
+                    
+                    }
+                }
+                
+            }
+            .center
+            {
+                padding: 15px;
+                background-color:white ;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                color: black;
+
+                @media (max-width:#{$width}) {
+                   padding: 5px;
+                   font-size: 12px;
+                   
+} 
+}
+        .bottom{
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            h3{
+                margin-bottom: 5px;
+            }
+            h4{
+                color: rgb(45, 1, 65);
+            }
+        }
+}
+    }
+}

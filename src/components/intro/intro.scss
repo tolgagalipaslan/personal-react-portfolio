@@ -1,0 +1,115 @@
+@import '../../global.scss';
+.intro{
+    background-color: #15023a;
+    display: flex;
+    @media (max-width:#{$width}) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        } 
+   
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+        .imgContainer{
+            width: 700px;
+            height: 700px;
+            background-color: aliceblue;
+            border-radius:50% ;
+            -webkit-border-radius:50% ;
+            -moz-border-radius:50% ;
+            -ms-border-radius:50% ;
+            -o-border-radius:50% ;
+            display: flex;
+            align-items: flex-end;
+            justify-content: right;
+            float: right;
+            img
+            {
+                height: 90%;
+            }
+    }
+    @media (max-width:#{$width}) {
+    display: none;
+    } 
+    }
+    .right{
+        flex: 0.5;
+        position: relative;
+        @media (max-width:#{$width}) {
+            flex: 1;
+            } 
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+            }
+            h2{font-size: 35px;
+                
+            }
+            h3{
+                font-size: 30px;
+                span{
+                    font-size: inherit;
+                    color: crimson;
+                }
+                .ityped-cursor{
+                    animation: blink 1s infinite;
+                    -webkit-animation: blink 1s infinite;
+                }
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{opacity: 0;}
+                }
+            }
+        }
+
+        a{
+            position: absolute;
+            bottom: 30px;
+            left: 25%;
+            background-color:white;
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            animation: arrowBlink 2s infinite;
+            align-items: center;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            
+            -webkit-animation: arrowBlink 3s infinite;
+
+            @media (max-width:#{$width}) {
+                } 
+            img{
+                width: 30px;
+                
+            }
+        }
+        @keyframes arrowBlink {
+            0%{
+                opacity: 0;
+            };
+            50%{
+                opacity: 1;
+            };
+            100%{
+                opacity: 0;
+            }
+            
+        }
+       
+    }
+}
